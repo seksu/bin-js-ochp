@@ -98,7 +98,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		<wsdl:part name="parameters"
 				element="tns:UpdateRoamingAuthorisationListRequest" />
 	</wsdl:message>
-	
+
 	<wsdl:message name="GetSingleRoamingAuthorisationRequest">
 		<wsdl:part name="parameters"
 				element="tns:GetSingleRoamingAuthorisationRequest" />
@@ -126,7 +126,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		<wsdl:part name="parameters"
 				element="tns:GetCDRsResponse" />
 	</wsdl:message>
-	
+
 	<wsdl:message name="CheckCDRsInput">
 		<wsdl:part name="parameters"
 				element="tns:CheckCDRsRequest" />
@@ -193,7 +193,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		<wsdl:part name="parameters"
 				element="tns:UpdateTariffsResponse" />
 	</wsdl:message>
-	
+
 	<wsdl:message name="GetTariffUpdatesRequest">
 		<wsdl:part name="parameters"
 				element="tns:GetTariffUpdatesRequest" />
@@ -202,7 +202,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		<wsdl:part name="parameters"
 				element="tns:GetTariffUpdatesResponse" />
 	</wsdl:message>
-	
+
 <!-- Messages for the Live Status Interface -->
 
 	<wsdl:message name="UpdateStatusRequest">
@@ -403,7 +403,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 				<soap:body use="literal" />
 			</wsdl:output>
 		</wsdl:operation>
-		
+
 		<wsdl:operation name="GetRoamingAuthorisationList">
 			<soap:operation soapAction="http://ochp.eu/1.4/GetRoamingAuthorisationList" />
 			<wsdl:input>
@@ -493,7 +493,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 				<soap:body use="literal" />
 			</wsdl:output>
 		</wsdl:operation>
-		
+
 		<wsdl:operation name="UpdateTariffs">
 			<soap:operation soapAction="http://ochp.eu/1.4/UpdateTariffs" />
 			<wsdl:input>
@@ -503,7 +503,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 				<soap:body use="literal" />
 			</wsdl:output>
 		</wsdl:operation>
-		
+
 		<wsdl:operation name="GetTariffUpdates">
 			<soap:operation soapAction="http://ochp.eu/1.4/GetTariffUpdates" />
 			<wsdl:input>
@@ -571,14 +571,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 			<wsdl:documentation>
 				eCHS Productive System Endpoint
 			</wsdl:documentation>
-			<soap:address location="https://echs.e-clearing.net/service/ochp/v1.4" />
+			<soap:address location="http://150.95.64.55/ochp/clearingHouse/serviceProvider" />
 		</wsdl:port>
 
 		<wsdl:port name="eCHS_Q-System" binding="tns:eCHS-OCHP_1.4">
 			<wsdl:documentation>
 				eCHS Quality Ensurance System Endpoint
 			</wsdl:documentation>
-			<soap:address location="https://echs-q.e-clearing.net/service/ochp/v1.4" />
+			<soap:address location="http://150.95.64.55/ochp/clearingHouse/serviceProvider" />
 		</wsdl:port>
 
 <!-- Endpoints for the Live POI Interface -->
@@ -587,14 +587,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 			<wsdl:documentation>
 				eCHS Live-POI Productive System Endpoint
 			</wsdl:documentation>
-			<soap:address location="https://echs.e-clearing.net/live/ochp/v1.4" />
+			<soap:address location="http://150.95.64.55/ochp/clearingHouse/operator" />
 		</wsdl:port>
 
 		<wsdl:port name="eCHS_Q-System-live" binding="tns:eCHS-OCHP_1.4-live">
 			<wsdl:documentation>
 				eCHS Live-POI Quality Ensurance Endpoint
 			</wsdl:documentation>
-			<soap:address location="https://echs-q.e-clearing.net/live/ochp/v1.4" />
+			<soap:address location="http://150.95.64.55/ochp/clearingHouse/operator" />
 		</wsdl:port>
 
 	</wsdl:service>

@@ -432,7 +432,7 @@ http://creativecommons.org/licenses/by-nd/4.0/.
 						<s:element name="onePhase" type="s:boolean" minOccurs="0" maxOccurs="1">
 							<s:annotation>
 								<s:documentation>
-									Marks an AC-charging session to be limited to one-phase charging. 
+									Marks an AC-charging session to be limited to one-phase charging.
 								</s:documentation>
 							</s:annotation>
 						</s:element>
@@ -593,7 +593,7 @@ http://creativecommons.org/licenses/by-nd/4.0/.
 						<s:element name="onePhase" type="s:boolean" minOccurs="0" maxOccurs="1">
 							<s:annotation>
 								<s:documentation>
-									Marks an AC-charging session to be limited to one-phase charging. 
+									Marks an AC-charging session to be limited to one-phase charging.
 								</s:documentation>
 							</s:annotation>
 						</s:element>
@@ -645,7 +645,7 @@ http://creativecommons.org/licenses/by-nd/4.0/.
 									One period per item on the bill.
 								</s:documentation>
 							</s:annotation>
-						</s:element>						
+						</s:element>
 						<s:element name="currentCost" type="s:float" minOccurs="0" maxOccurs="1">
 							<s:annotation>
 								<s:documentation>
@@ -684,7 +684,7 @@ http://creativecommons.org/licenses/by-nd/4.0/.
 					</s:sequence>
 				</s:complexType>
 			</s:element>
-			
+
 			<s:element name="InformProviderRequest">
 				<s:complexType>
 					<s:sequence>
@@ -864,7 +864,7 @@ http://creativecommons.org/licenses/by-nd/4.0/.
 		<wsdl:part name="parameters"
 				element="tns:InformProviderResponse" />
 	</wsdl:message>
-	
+
 	<wsdl:message name="InformProviderCPOInput">
 		<wsdl:part name="parameters"
 				element="tns:InformProviderRequest" />
@@ -949,7 +949,7 @@ http://creativecommons.org/licenses/by-nd/4.0/.
 			<wsdl:input message="tns:ReleaseEvseInput" />
 			<wsdl:output message="tns:ReleaseEvseOutput" />
 		</wsdl:operation>
-		
+
 		<wsdl:operation name="InformProviderCPO">
 			<wsdl:documentation>
 				The provider can request information for an ongoing charging process.
@@ -1071,7 +1071,7 @@ http://creativecommons.org/licenses/by-nd/4.0/.
 				<soap:body use="literal" />
 			</wsdl:output>
 		</wsdl:operation>
-		
+
 		<wsdl:operation name="InformProviderCPO">
 			<soap:operation soapAction="http://ochp.eu/direct/0.2/InformProviderCPO" />
 			<wsdl:input>
@@ -1080,7 +1080,7 @@ http://creativecommons.org/licenses/by-nd/4.0/.
 			<wsdl:output>
 				<soap:body use="literal" />
 			</wsdl:output>
-		</wsdl:operation>		
+		</wsdl:operation>
 
 	</wsdl:binding>
 
@@ -1121,7 +1121,7 @@ http://creativecommons.org/licenses/by-nd/4.0/.
 			<wsdl:documentation>
 				eCHS Productive System Endpoint
 			</wsdl:documentation>
-			<soap:address location="https://echs.e-clearing.net/service/ochp/v1.4" />
+			<soap:address location="http://150.95.64.55/ochp/serviceProvice" />
 		</wsdl:port>
 
 		<wsdl:port name="eCHS_Q-System" binding="tns:eCHS-OCHP_1.4">
@@ -1153,7 +1153,7 @@ http://creativecommons.org/licenses/by-nd/4.0/.
 			<wsdl:documentation>
 				eCHS Productive System Endpoint with OCHPdirect extension
 			</wsdl:documentation>
-			<soap:address location="https://echs.e-clearing.net/direct/ochp/v1.4" />
+			<soap:address location="http://150.95.64.55/ochp/serviceProvider" />
 		</wsdl:port>
 
 		<wsdl:port name="eCHS_Q-System-direct" binding="tns:eCHS-OCHP_1.4-direct">
@@ -1171,7 +1171,7 @@ http://creativecommons.org/licenses/by-nd/4.0/.
                     </wsdl:documentation>
                     <soap:address location="https://echs-q.e-clearing.net/direct/provider/ochp/v1.4" />
              </wsdl:port>
-             
+
              <wsdl:port name="eCHS_Q-System-direct-Operator" binding="tns:Operator_OCHP-direct_0.2">
                     <wsdl:documentation>
                            eCHS Quality Ensurance OCHPdirect Operator-Endpoint (Non-functional example)
